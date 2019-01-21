@@ -1,0 +1,33 @@
+.default-view{
+  margin: 200px 0;
+  text-align: center;
+}
+button{
+  border-bottom: solid 4px #2f443d;
+  text-decoration: none;
+  padding: 0.7em 1.5em;
+  color: #fff;
+  background: #f15a29;
+  font-size: 2em;
+}
+button:hover{
+  background: rgba(241, 90, 41, 0.5294117647058824);
+  cursor: pointer;
+}
+.authenticated-view{
+  margin: 150px auto;
+  text-align: center;
+}
+.authenticated-view p{
+  font-size: 3em;
+  color: green;
+}
+.codeblock{
+    max-width: 400px;
+    line-height: 1.8;
+    margin: 0 auto 30px;
+    background: lightgoldenrodyellow;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
