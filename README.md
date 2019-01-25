@@ -1,6 +1,8 @@
 # oauth-demo
-Wordpress OAuth 2.0 demo with React
+WP OAuth Server - Pro plugin demo with React
 
 ## Installation
-- Update clientID, clientSecret & hostURl values in ** src/actions/index.js **
+- Set up Wordpress with WP OAuth Server - Pro plugin installed
+- Add a new Client
+- Update clientID, clientSecret & hostURl(WP website url) values in **src/actions/index.js**
 - Run npm start
