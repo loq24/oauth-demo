@@ -12,8 +12,8 @@ import reducers from './reducers';
 import RequireAuth from './components/auth/require_auth';
 import UnRequireAuth from './components/auth/unrequire_auth';
 
-import './styles/';
-import Main from './pages/Main';
+import './styles/index.css';
+import App from './pages/App';
 import Me from './pages/Me';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxThunk)(createStore);
@@ -27,7 +27,7 @@ if(token){
 ReactDOM.render(<Provider store={store}>
     <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={UnRequireAuth(Main)} />
+                <Route path="/" exact component={UnRequireAuth(App)} />
                 <Route path="/me" exact component={RequireAuth(Me)} />
             </Switch>
         

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import jsCookie from 'js-cookie';
-import * as actions from './actions';
+import * as actions from '../actions';
 import '../styles/Main.css';
 
 const getParameterByName = (param) => {
@@ -34,7 +34,7 @@ class Main extends Component {
         return (
             <div className="default-view">
                 <p className="graytext">API URL: {actions.hostURl}</p>
-                <a href={`${actions.hostURl}/oauth/authorize?client_id=${actions.clientID}&redirect_uri=${this.redirectURl}&response_type=code`}>
+                <a href={`${actions.hostURl}/api/authorize?response_type=code&client_id=${actions.clientID}&redirect_uri=${this.redirectURl}`}>
                     <button>{isAuthenticating ? `Authenticating...` : `Authenticate`}</button>
                 </a>
             </div>
