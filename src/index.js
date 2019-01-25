@@ -12,7 +12,7 @@ import reducers from './reducers';
 import RequireAuth from './components/auth/require_auth';
 import UnRequireAuth from './components/auth/unrequire_auth';
 
-import './styles/';
+import './styles/index.css';
 import Main from './pages/Main';
 import Me from './pages/Me';
 

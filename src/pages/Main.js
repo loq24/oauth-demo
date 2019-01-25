@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import jsCookie from 'js-cookie';
-import * as actions from './actions';
+import * as actions from '../actions';
 import '../styles/Main.css';
 
 const getParameterByName = (param) => {
